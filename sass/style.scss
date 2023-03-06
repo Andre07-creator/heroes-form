@@ -1,0 +1,88 @@
+@import './variables/fonts.scss';
+@import './variables/color.scss';
+@mixin text-style($font-size, $font-family,$text-align) {
+    font-size: $font-size;
+    font-family: $font-family;
+    text-align: $text-align;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";}
+
+html body{
+    background-color: $color-yellow
+}
+.header{
+    h2{
+        width: 100%;
+        @include text-style(50px, $stantard-font-family, center);
+        background-color: $color-red;
+
+    }
+}
+
+.section-1{
+    h3{
+        padding-top: 50px;
+        @include text-style(30px, $stantard-font-family, center);
+    }
+p{
+    width: 32.222%;
+    display: inline-block;
+    @include text-style(22px, $stantard-font-family, center);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+img{
+    width: 400px;
+    height: 150px;
+    display: block;
+    padding-left: 50px;
+}
+}
+
+.form{
+padding-left: 450px;
+padding-top: 70px;
+form{
+    width: 400px;
+    background-clip: padding-box;
+    text-align: center;
+}
+    
+    label{
+        display: block;
+        margin-top: 10px;
+        @include text-style(20px, $stantard-font-family, center);
+    }
+    h3{
+        @include text-style(24px, $stantard-font-family, center);
+    }
+    input[type= text]{
+        width: 400px;
+        height: 60px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding: 8px 10px 8px 10px;
+        border: 1px solid #ccc;
+    }
+    input[type= submit]{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        background-color: $color-red;
+        height: 50px;
+        width: 200px;
+        font-weight: bolder;
+        @include text-style(18px, $stantard-font-family, center);
+    }
+   
+}
+.footer{
+    p{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        @include text-style(10px, $stantard-font-family, center);
+    }
+   }
